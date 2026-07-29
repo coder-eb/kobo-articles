@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Speaking Clearly Under Pressure</title>
+  <meta name="description" content="A self-learning guide for engineers explaining technical work in real time">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Speaking Clearly Under Pressure">
+  <meta property="og:description" content="A self-learning guide for engineers explaining technical work in real time">
+  <meta property="og:url" content="https://coder-eb.github.io/kobo-articles/articles/speaking-clearly-under-pressure.html">
+  <meta property="article:author" content="Ebranbright">
+  <link rel="canonical" href="https://coder-eb.github.io/kobo-articles/articles/speaking-clearly-under-pressure.html">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Speaking Clearly Under Pressure",
+  "datePublished": "2026-07-29",
+  "author": {
+    "@type": "Person",
+    "name": "Ebranbright"
+  },
+  "description": "A self-learning guide for engineers explaining technical work in real time",
+  "url": "https://coder-eb.github.io/kobo-articles/articles/speaking-clearly-under-pressure.html"
+}
+  </script>
+  <style>
+    :root { color-scheme: light dark; }
+    body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.7; }
+    h1 { font-size: 1.8rem; margin-bottom: 0.25rem; }
+    h2 { font-size: 1.3rem; margin-top: 2.5rem; }
+    h3 { font-size: 1.05rem; margin-top: 1.8rem; }
+    .byline { opacity: 0.6; font-size: 0.9rem; margin-bottom: 2rem; }
+    blockquote { border-left: 3px solid currentColor;
+                  padding-left: 1rem; margin-left: 0; opacity: 0.85; }
+    hr { border: none; border-top: 1px solid currentColor;
+          opacity: 0.2; margin: 2rem 0; }
+    strong { font-weight: 700; }
+  </style>
+</head>
+<body>
+  <article>
+    <h1>Speaking Clearly Under Pressure</h1>
+    <p class="byline">A self-learning guide for engineers explaining technical work in real time</p>
+    <p>This guide is for engineers who know their subject well but lose clarity when explaining it live — in standups, client calls, incident reviews, and design discussions. It also doubles as a guide to improve general business English communication.
+It assumes medium-to-good English proficiency and targets the two failure modes that matter most in practice: buildup-first framing (why/how before what - overwhelming listeners) and slow word retrieval under pressure (which can exacerbate the buildup and vague phrasing).
+It is written for self-directed practice. Everything here can be done alone or in pairs, with nothing more than a phone recorder and 15 minutes a day.</p>
+<h2>Part 0 — Diagnose before you drill</h2>
+<p>Different problems need different practice. Spend the first week figuring out which one dominates for you. Do not skip this; learning vocabulary when your real problem is proper sentence framing / structuring (or vice versa) wastes months.</p>
+<p><strong>Test 1 — The first-language test.</strong> 
+Explain a recent technical problem, unscripted, in Malayalam or Tamil. Record it. Then listen:
+If you are still roundabout — context, history, caveats, then finally the point — your problem is a structuring habit, independent of English. Focus on Part 1.
+If you are crisp in your first language but circle and hedge in English, your problem is retrieval latency — the word exists in your head but doesn&rsquo;t surface fast enough under time pressure, so you talk around it. Focus on Part 2.
+Most people have some of both. Note the ratio.</p>
+<p><strong>Test 2 — The written test.</strong> 
+Write the same explanation with unlimited time. If the written version is precise and the spoken one isn&rsquo;t, that confirms retrieval speed (not vocabulary knowledge) is the gap. Recognition and recall-under-pressure use different memory pathways; reading a term in docs does not build the ability to produce it mid-sentence.</p>
+<p><strong>Test 3 — The playback test.</strong> 
+Record yourself answering one unscripted technical question (60 seconds max). Listen back once. Count: how many seconds pass before you state the actual answer? How many filler phrases (&ldquo;basically&rdquo;, &ldquo;the thing is&rdquo;, &ldquo;what happened was&rdquo;)? How many times do you restart a sentence? Write the numbers down — this is your baseline, and you&rsquo;ll re-run this test monthly.</p>
+<h2>Part 1 — Fixing structure: answer-first speech</h2>
+<h3>The principle</h3>
+<p>The framework here is Barbara Minto&rsquo;s Pyramid Principle (from her book The Pyramid Principle: Logic in Writing and Thinking): state the conclusion first, then support it, grouped logically. Minto wrote it for consultants&rsquo; documents, but the core insight transfers directly to speech — listeners cannot hold your buildup in working memory while waiting to find out what it&rsquo;s building toward. In writing, a reader can re-read. In speech, whatever they didn&rsquo;t anchor is gone.
+Engineers resist this because we discover answers bottom-up: investigate → find cause → conclude. Explaining in discovery order feels honest and complete. But the listener needs delivery order: conclusion → reason → detail on request. The discipline is inverting your own thought process at the moment of speaking.</p>
+<h3>Drill 1.1 — The scripted opener (daily, 2 minutes)</h3>
+<p>Don&rsquo;t try to &ldquo;restructure your thinking.&rdquo; Install one mechanical habit instead: a fixed first sentence.
+&ldquo;Short answer: <strong><em>. Here&rsquo;s why.&rdquo;
+or
+&ldquo;The headline is </em></strong>.&rdquo;
+Practice it out loud on trivial questions until it&rsquo;s automatic — what did you work on today, why is the build failing, should we upgrade this library. The point of a fixed phrase is that it fires before your buildup instinct does. Once the conclusion is out, the buildup becomes support instead of preamble, and the listener can follow it.</p>
+<h3>Drill 1.2 — The two-second pause (use in real meetings)</h3>
+<p>Before answering any substantive question, take a deliberate two-second silence and use it to find your one-sentence headline. Non-native speakers under-use pauses because silence feels like failure; in reality, a short pause followed by a direct answer reads as more confident than instant talking that circles. Practice tolerating the silence — it is the cheapest single improvement available.</p>
+<h3>Drill 1.3 — Timed answers (3× per week, 10 minutes)</h3>
+<p>Pick a technical question (see the prompt bank below), start a 45-second timer, answer out loud, stop dead when the timer ends. Then listen to the recording and ask one question only: did the answer appear in the first ten seconds? If not, redo the same question. Do three questions per session.
+The hard cutoff matters. Unlimited time lets you keep your buildup habit and just talk longer. The constraint forces prioritization — the same reason &ldquo;explain it in 3 sentences&rdquo; works better as feedback than &ldquo;be more concise.&rdquo;</p>
+<p>Prompt bank (rotate, add your own from real work):
+Why did the deployment fail last week?
+Should we add a read replica? Answer for a non-technical manager.
+What does this service do? (pick any service you own)
+A client asks: why is the API slow only in one country?
+Explain what a race condition is to a new junior.
+What&rsquo;s the riskiest part of the change you&rsquo;re shipping this sprint?
+Why did we choose X over Y? (any real architecture decision)
+What would break first if traffic doubled tomorrow?</p>
+<h3>Drill 1.4 — Answer, reason, example, answer (the ARE-A shape)</h3>
+<p>For longer explanations (2–3 minutes), practice one fixed shape: Answer → Reason → Example → restate the Answer. This is a standard impromptu-speaking structure (Toastmasters teaches a variant of it) and it prevents the two most common long-answer failures: never landing the point, and landing it once at the end where half the audience already tuned out.
+One rule for the Example step: before using an analogy, you must be able to state the mapping in one sentence — &ldquo;the queue is like the restaurant&rsquo;s order counter: the counter is the buffer, the cooks are the workers.&rdquo; If you can&rsquo;t state which part maps to which, the analogy isn&rsquo;t ready and will confuse more than it helps. Incoherent examples are almost never bad examples — they&rsquo;re unmapped ones.</p>
+<h2>Part 2 — Fixing retrieval: vocabulary at speaking speed</h2>
+<h3>The principle</h3>
+<p>The method here comes from ESL research, specifically Michael Lewis&rsquo;s Lexical Approach (The Lexical Approach, 1993; Implementing the Lexical Approach, 1997). The core claim: fluent speech is not built word-by-word from grammar rules — it&rsquo;s assembled from pre-fabricated multi-word chunks retrieved whole. &ldquo;This is caused by a race condition between the writer and the cache&rdquo; is not eleven retrieval operations for a fluent speaker; it&rsquo;s two or three chunk retrievals.</p>
+<p>Consequences for practice:
+Drill chunks, not words. A flashcard that says &ldquo;idempotent&rdquo; is nearly useless for speech. The unit to practice is &ldquo;this endpoint is idempotent, so retries are safe&rdquo; — a whole functional phrase you can deploy as one piece.
+Drill production, not recognition. Say it out loud, in varied sentences, repeatedly. Silent review builds reading skill, not speaking skill.
+Drill from real failures, not word lists. Generic &ldquo;business English&rdquo; vocabulary is mostly noise for this purpose. The list that matters is the specific set of words and phrases you personally groped for in real conversations — and that list is short.</p>
+<h3>Drill 2.1 — The fumble log (ongoing, 1 minute per incident)</h3>
+<p>Keep a running note (phone, notebook, anywhere). Every time you catch yourself talking around a word in a real conversation — you said &ldquo;the thing that checks if the user is allowed&rdquo; instead of &ldquo;the authorization middleware&rdquo; — log the circumlocution and the word you wanted. Do the same when reviewing your recordings from Part 1.
+This log is your syllabus. After a month you&rsquo;ll find it&rsquo;s maybe 40–60 items, heavily repeated, and disproportionately: precise verbs (mitigate, degrade, propagate, reconcile, deprecate), hedged-certainty phrases (&ldquo;this likely indicates…&rdquo;, &ldquo;I&rsquo;d need to confirm, but…&rdquo;), and transition/connector phrases (&ldquo;which brings us to…&rdquo;, &ldquo;the tradeoff is…&rdquo;). These categories are worth knowing because they&rsquo;re where medium-proficiency technical speakers most often fall back to vague filler.</p>
+<h3>Drill 2.2 — Chunk drilling (daily, 5 minutes)</h3>
+<p>Take 3–5 items from the fumble log. For each:
+Build the full chunk — the whole phrase as you&rsquo;d actually say it in a meeting, not the bare word.
+Say it out loud five times, then say it in three different sentences (different subject, different context). Varying the frame is what makes it retrievable in new situations rather than only in the drilled one.
+Return to the same items after 2 days, then 5 days, then 2 weeks. This is standard spaced repetition, just applied to spoken output. If you use Anki, make the card prompt a situation (&ldquo;client asks why yesterday&rsquo;s numbers changed&rdquo;) and the answer a spoken chunk — and always answer out loud before flipping.</p>
+<h3>Drill 2.3 — Shadowing (3× per week, 10 minutes)</h3>
+<p>Shadowing is a well-established second-language technique: play audio of a fluent speaker and repeat what they say as they say it, or with a half-second lag, matching pace, phrasing, and stress. It builds automatic retrieval of natural phrasing instead of word-by-word sentence construction, and it&rsquo;s one of the few techniques that improves rhythm and pacing, not just word choice.
+Source material matters — use speakers doing your kind of speaking:
+Conference talks by engineers known for clarity (talks from Strange Loop, GOTO, or AWS re:Invent breakout sessions are good hunting grounds — pick speakers, not brands).
+Incident-review or architecture-discussion podcasts.
+Recordings of your own best colleagues or consultants explaining things well, if you have them.
+Ten minutes of the same 2–3 minute clip, repeated, beats thirty minutes of new material. Repetition of one clip until it&rsquo;s smooth is the mechanism.
+This drill is the minimum viable version. If shadowing clicks for you, Appendix A covers the full method — why it works, a graded protocol, and a curated list of speakers worth shadowing.</p>
+<h3>Drill 2.4 — Paraphrase sprints (2× per week, 5 minutes)</h3>
+<p>Take one technical paragraph (from your own docs, a README, an RFC). Read it once. Close it. Explain it out loud without looking. This forces you to produce the content in your own retrievable chunks rather than reciting, and it surfaces fumbles for the log. It doubles as a Part 1 drill if you force yourself to lead with the paragraph&rsquo;s main point.</p>
+<h2>Part 3 — Fixing delivery: the mechanics nobody mentions</h2>
+<p>Three smaller habits with outsized effect on how clear you sound, regardless of structure or vocabulary:
+Slow down by ~15%. Under pressure, medium-proficiency speakers speed up to compensate, which multiplies word-retrieval failures and forces restarts. Deliberately slower speech gives your retrieval a buffer and sounds more authoritative, not less. When shadowing (2.3), occasionally pick a slightly slow, deliberate speaker on purpose.
+Replace fillers with silence. &ldquo;Basically&rdquo;, &ldquo;actually&rdquo;, &ldquo;you know&rdquo;, &ldquo;the thing is&rdquo; — these are audible word-searches. You cannot suppress the search, but you can train silence as its cover. Silence reads as thought; filler reads as confusion. Catch these in your recordings and count them; the count dropping is a real, measurable win.
+End sentences. A signature pattern of buildup-first speech is sentences that never terminate — clause chained to clause with &ldquo;and&rdquo;, &ldquo;so&rdquo;, &ldquo;which means&rdquo;. Practice landing a full stop and starting a new sentence. Short sentences are dramatically easier to produce correctly under pressure and easier to follow. If a recording shows 40-second &ldquo;sentences,&rdquo; this is a priority.</p>
+<h2>Part 4 — The roadmap</h2>
+<p>A realistic schedule at ~15 minutes/day, 5 days/week. Adjust freely, but protect the recording-and-listening loop — it is the engine of the whole program. Self-perception of one&rsquo;s own speech is unreliable; the recording is the only honest mirror.</p>
+<p><strong>Weeks 1–2</strong> — Baseline and habit install.
+Run all three diagnostic tests (Part 0) and write down your numbers. Start the fumble log. Daily: scripted-opener drill (1.1) plus the two-second pause in real meetings. No other drills yet — one habit at a time.</p>
+<p><strong>Weeks 3–6</strong> — Core loop.
+Daily: chunk drilling (2.2, 5 min). Alternate days: timed answers (1.3) and shadowing (2.3). Weekly: one paraphrase sprint (2.4). Keep using the opener and the pause in every real meeting — real meetings are the actual test set; drills are just the training set.</p>
+<p><strong>Weeks 7–8</strong> — Measure and adjust.
+Re-run the playback test (Test 3) on the same style of question as your baseline. Compare: seconds-to-answer, filler count, restarts. Reread the fumble log — items that stopped appearing are done; retire them and pull in new ones. Decide where your remaining gap is (structure vs. retrieval vs. delivery) and rebalance the next cycle toward it.</p>
+<p><strong>Ongoing (month 3+)</strong>
+The fumble log and the recording loop continue indefinitely at low intensity — they&rsquo;re maintenance, like exercise. Add stretch practice: volunteer to present in reviews, take the explaining role on client calls, or join a Toastmasters club and specifically do Table Topics (their impromptu-speaking segment — 1–2 minute unprepared answers to random prompts, which is almost exactly the skill this guide targets, with a live audience). There are active clubs in most Indian cities.
+Expectation-setting: the opener habit and pause show results in 2–3 weeks. Retrieval speed on drilled chunks, 4–8 weeks. Generalized fluency improvement — retrieval getting faster even on undrilled material — is a 6–12 month effect. The early wins are real but narrow; don&rsquo;t stop when the drilled phrases get easy.</p>
+<h2>Part 5 — References</h2>
+<p>Barbara Minto — The Pyramid Principle. The canonical text on answer-first structuring. Written for documents; Part 1 of this guide is the spoken adaptation. Read at minimum the first section (the SCQA framework and vertical/horizontal logic).
+Michael Lewis — The Lexical Approach (1993) and Implementing the Lexical Approach (1997). The theoretical basis for chunk-based drilling. The second book is more practical if you only read one. You don&rsquo;t need the whole book to use the method — Part 2 above is the operational core.
+Toastmasters International — Table Topics. The most accessible structured environment for impromptu speaking practice with an audience. The broader Toastmasters curriculum (Pathways) is take-it-or-leave-it; Table Topics specifically is the high-value component for this goal.
+Shadowing originates with interpreter training (often associated with Alexander Argüelles&rsquo;s popularization for language learners); any of his freely available explanations of the technique cover the mechanics in a few minutes.
+Spaced repetition: the standard evidence base is the spacing-effect literature (Ebbinghaus onward; Cepeda et al. 2006 is the common modern meta-analysis). Practically: expanding intervals of 2 days → 5 days → 2 weeks is close enough to optimal; precision doesn&rsquo;t matter much.</p>
+<h2>Part 6 — Learning together as a team</h2>
+<p>Peer practice fixes the biggest weakness of self-study — no live pressure and no listener feedback — and it&rsquo;s cheap. A few formats that work at small-team scale:
+A recurring 15-minute drill slot. Once or twice a week, 3–4 people: each person gets one prompt from the bank and 45 seconds to answer, then 60 seconds of feedback from the group. Feedback is constrained to two questions only — did the answer come first? and where did I lose you? Banning general feedback (&ldquo;be more confident&rdquo;) keeps it useful and keeps it safe; nobody&rsquo;s English is being graded, only the structure.
+Fumble-log sharing. Once a week, everyone contributes 2–3 items from their log to a shared list. The overlap will be large (same domain, same meetings), so one person&rsquo;s fumble becomes everyone&rsquo;s drill material — and seeing seniors log fumbles normalizes the whole exercise for juniors.
+The headline interrupt, by consent. Agree as a team that in internal meetings, anyone can ask &ldquo;what&rsquo;s the headline?&rdquo; when an explanation is circling — including juniors asking it of seniors. Agreed in advance, it&rsquo;s a shared training cue rather than a put-down, and it moves the practice into real work where it actually matters.
+Rotate the explainer role. In client calls and demos, deliberately rotate who explains, rather than defaulting to the strongest speaker. The strongest speaker pairs as backup. This is slower in the short term and is exactly how the gap closes in the long term.
+On switching to English internally: worth doing, but as structured windows, not a blanket rule. Full-time forced English has real costs — technical discussions lose depth when people can&rsquo;t reach for their strongest language, and informal rapport suffers, which quietly kills the policy within weeks anyway. What holds up better: designate specific recurring contexts as English-always — standups, demo dry-runs, anything client-facing or rehearsing for it, plus the drill slot above. That concentrates practice in exactly the situations that mirror the real need (explaining work in English under mild pressure), keeps deep problem-solving unimpaired, and is a rule people will actually follow. If those windows go well for a couple of months, expanding them is easy; walking back a failed blanket rule is not.</p>
+<h2>Appendix A — Shadowing, the full method (optional)</h2>
+<p>The 10-minute version in Drill 2.3 is enough to get the core benefit. This appendix is for anyone who wants to go deeper — shadowing rewards seriousness more than any other drill in this guide, and it is the one technique here that improves rhythm, stress, and pacing, which nothing else touches.</p>
+<h3>Why it works</h3>
+<p>Fluent speech runs on procedural memory — the same automatic, muscle-level system as typing or playing an instrument — not on the declarative memory you use to know vocabulary. That&rsquo;s why you can know a word perfectly and still fail to produce it mid-sentence. Studying more English adds declarative knowledge; shadowing directly trains the production machinery, because you&rsquo;re physically articulating fluent speech at fluent speed, hundreds of sentences per session, with a native model correcting you in real time by comparison.</p>
+<p>Three specific effects:
+Chunk absorption. You end up articulating natural multi-word phrasings whole (&ldquo;what that means in practice is…&rdquo;, &ldquo;the tradeoff we&rsquo;re making here…&rdquo;) until they become retrievable units — the Lexical Approach&rsquo;s goal, achieved through the ear and mouth rather than flashcards.
+Rhythm transfer. Malayalam and Tamil are syllable-timed languages (each syllable roughly equal length); English is stress-timed (stressed syllables set the beat, unstressed ones compress). This mismatch — more than any individual sound — is what makes speech harder for foreign listeners to parse. Shadowing is essentially the only self-study technique that retrains it, because you&rsquo;re forced to match the model&rsquo;s timing, not just their words.
+Pause placement. Fluent speakers pause at clause boundaries; struggling speakers pause mid-clause, wherever retrieval fails. Shadowing good speakers trains where pauses belong, which is half of sounding composed.
+The technique comes from professional interpreter training and was popularized for self-study language learners by Alexander Argüelles; his short freely available videos on the mechanics are worth ten minutes if you want the original source.</p>
+<h3>The graded protocol</h3>
+<p>Work through these levels with the same clip; move on when a level feels easy. Clip length: 1–3 minutes. Always speak out loud at full volume — whispering or mouthing trains a different (weaker) motor pattern.</p>
+<p><strong>Level 1 — Read-along shadowing. Play the audio with the transcript in front of you; speak along with the recording simultaneously. The transcript removes the listening burden so you can focus purely on matching pace and stress. (Most conference talks on YouTube have decent auto-transcripts; podcasts increasingly publish them.)</strong></p>
+<p><strong>Level 2 — Blind shadowing. Same clip, no transcript, still simultaneous. Now your ear does the work. Expect to drop words — keep going, don&rsquo;t stop and rewind mid-attempt; finish the clip, then repeat it.</strong></p>
+<p><strong>Level 3 — Lag shadowing. Repeat with a half-second to one-second delay behind the speaker, like an interpreter. This is significantly harder: you&rsquo;re holding their speech in a buffer while producing the previous phrase. This level is the one that most directly builds real-time production capacity under load — the exact resource you&rsquo;re short of in meetings.</strong></p>
+<p><strong>Level 4 — Shadow, then reconstruct. After shadowing a clip to smoothness, close it and re-explain its content in your own words (this merges into Drill 2.4). The natural phrasings you just drilled will surface in your own speech — that&rsquo;s the transfer you&rsquo;re after.</strong></p>
+<p>A serious session is 15–20 minutes on one clip, 3–4× per week. Fatigue is normal and is actually the sign it&rsquo;s working — it&rsquo;s motor training, not study.</p>
+<h3>Who to shadow</h3>
+<p>Selection criteria, in priority order: moderate pace (you can&rsquo;t match someone speaking at 180 wpm — pick ~120–140), clean articulation and audio, clause-boundary pausing, and ideally content in your register (technical explanation). Two different speaker types serve two different goals — use both:</p>
+<p>For pacing, pause discipline, and composure (mostly scripted or semi-scripted — ideal for Levels 1–2):
+Barack Obama — probably the single best widely available model for pausing. Deliberately slow, pauses that would feel uncomfortably long if you did them, yet reads as maximum composure. Shadow his speeches specifically to recalibrate what an acceptable pause feels like. (Shadow his delivery, not his politics — pick policy-neutral commencement speeches if that&rsquo;s cleaner for a team setting.)
+David Attenborough — masterclass in pace and clause-boundary phrasing, exceptionally clean audio, effectively unlimited material. Register is narration, not explanation, so treat him as rhythm training only.
+Sal Khan (Khan Academy) — calm, moderately paced explanation register: closer to your actual use case than any speech. Thousands of hours of material, including technical topics.
+Grant Sanderson (3Blue1Brown) — scripted but conversational technical explanation, very clean phrasing. Excellent Level 1–2 material for engineers; the content itself rewards the repetition.</p>
+<p>For extemporaneous structure — how fluent speakers actually assemble unscripted answers, which is your real target skill (better for Levels 3–4; expect natural hesitations, which is the point):
+Kelsey Hightower — arguably the best extemporaneous technical speaker in the industry. Measured pace, plain words for complex infrastructure topics, answer-first by instinct. His conference Q&amp;As and podcast interviews are ideal material; he is the closest thing on this list to &ldquo;the skill this entire guide is aiming at, embodied.&rdquo;
+Richard Feynman — the classic model for explaining hard things in simple words, fully unscripted (the Fun to Imagine interview series is the standard starting point). Audio is older; pace is moderate; the way he builds explanations from everyday analogies with explicit mappings is Drill 1.4 in the wild.
+Raymond Hettinger (Python core developer) — conversational conference talks at an easy pace, full of natural transition chunks (&ldquo;so what does that buy us…&rdquo;, &ldquo;here&rsquo;s the thing…&rdquo;) that are directly reusable in your own meetings.
+Rich Hickey — Simple Made Easy and his other talks are slow, deliberate, and heavily pause-structured; semi-scripted but delivered extemporaneously. Good bridge material between the two categories.</p>
+<p>Two deliberate inclusions for an Indian team:
+Sundar Pichai — measured, calm, unmistakably Indian-accented English at the highest level of global business. Shadow him partly for the pacing, and partly for the proof: the goal of all this is clarity, not accent replacement. An Indian accent with clean rhythm and pausing is a fully professional endpoint; do not let anyone on the team confuse this program with accent-neutralization training.
+A caution, not a recommendation: Shashi Tharoor. Frequently cited in India as the model English speaker, but wrong for this purpose — his register is ornate and his vocabulary deliberately rare, which is the opposite of what technical communication needs. Shadowing him trains you toward complexity; this guide trains you toward plainness. Admire, don&rsquo;t imitate.</p>
+<p>Practical note: pull audio from YouTube, keep 3–4 clips on your phone, and rotate slowly — one clip per week, drilled to smoothness, beats a new clip every session. When a clip starts feeling boring, that&rsquo;s not a bug; boredom means the material is automated, which is the goal. Then switch.</p>
+  </article>
+</body>
+</html>
